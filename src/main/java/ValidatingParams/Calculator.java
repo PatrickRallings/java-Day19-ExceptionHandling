@@ -1,3 +1,5 @@
+package ValidatingParams;
+
 public class Calculator {
 
     public int factorial(int num) throws IllegalArgumentException {
@@ -12,7 +14,7 @@ public class Calculator {
         }
     }
 
-    public int binomialCoefficent(int setSize, int subsetSize) {
+    public int binomialCoefficent(int setSize, int subsetSize) throws IllegalArgumentException {
         if (subsetSize < 0 || setSize < subsetSize) {
             throw new IllegalArgumentException("Invalid arguments entered.");
         } else {
