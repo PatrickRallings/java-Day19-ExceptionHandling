@@ -49,4 +49,8 @@ public class AverageSensor implements Sensor{
             throw new IllegalStateException("Invalid list of sensors.");
         }
     }
+
+    public List<Integer> readings(){
+        return this.readings;
+    }
 }
